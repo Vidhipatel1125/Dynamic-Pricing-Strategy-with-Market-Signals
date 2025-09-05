@@ -87,8 +87,7 @@ pip install -r requirements.txt
 python src/make_data.py
 
 # 5. Explore case study
-jupyter notebook notebooks/01_case_study_week1.ipynb
-
+jupyter notebook notebooks/01_case_study_week1.ipynb ```
 
 ## 📊 Week 2 Results — Demand Modeling
 
