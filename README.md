@@ -53,10 +53,10 @@ This mini case study combines **data analytics** with **business insights** to e
 
 ## 🧾 Business Insights (Week 1)
 
-- **Positioning:** We are cheaper than premium on ~__% of days, but only undercut the discounter ~__%.  
-- **Promotions:** On average, promo days increase units sold by ~__%. The trade-off in revenue needs careful balancing.  
-- **Elasticity:** Kombucha demand is highly price sensitive (elasticity ≈ __), while almond milk is steadier (elasticity ≈ __).  
-- **What-if Simulation:** A 5% price cut in __ is projected to **(increase/decrease)** revenue by ~__%.  
+- **Positioning:** We are cheaper than premium on 100% of days, but only undercut the discounter 0%.  
+- **Promotions:** On average, promo days increase units sold by 10%. The trade-off in revenue needs careful balancing.  
+- **Elasticity:** Kombucha demand is highly price sensitive (elasticity -1.16_), while almond milk is steadier (elasticity -1.24_).  
+- **What-if Simulation:** A 5% price cut is projected to **(increase)** revenue almond milk (+0.9%) and kombucha (+0.5%), but hurts protein shakes (-0.9%) and oat milk (-0.9%)%.  
 
 ---
 
