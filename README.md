@@ -100,7 +100,7 @@ This week we move beyond descriptive analysis into **predictive demand modeling*
 
 ### 📈 Demand Curves
 <p align="center">
-  <img src="reports/figures/week2_demand_curve_almond_milk.png" width="520" alt="Demand curve — Almond milk"/>
+  <img src="reports/figures/week2_demand_curve.png" width="520" alt="Demand curve — Almond milk"/>
 </p>
 
 > **Story:** Demand falls as price rises. **Almond milk** and **kombucha** show the steepest slopes (most price-sensitive).
