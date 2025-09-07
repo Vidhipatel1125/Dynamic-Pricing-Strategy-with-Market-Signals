@@ -93,58 +93,53 @@ jupyter notebook notebooks/01_case_study_week1.ipynb
 
 ## 📊 Week 2 Results — Demand Modeling
 
-This week, we move beyond descriptive analysis into predictive demand modeling. Using regression and simulated demand curves, we explored:
-
--How demand responds to our own price changes
-
--How promotions shift demand
-
--How competitor pricing shapes outcomes
+This week we move beyond descriptive analysis into **predictive demand modeling**. We estimated log–log regressions per category to quantify:
+- Own-price elasticity (how much units change when our price changes)
+- Promo lift
+- Cross-effects from competitor prices
 
 ### 📈 Demand Curves
-<p align="center"> <img src="reports/figures/week2_demand_curve.png" width="500"/> </p>
+<p align="center">
+  <img src="reports/figures/week2_demand_curve_almond_milk.png" width="520" alt="Demand curve — Almond milk"/>
+</p>
 
-> **Story:** As expected, demand falls as price rises. Among categories, almond milk and kombucha show steeper drops, signaling higher price sensitivity.
+> **Story:** Demand falls as price rises. **Almond milk** and **kombucha** show the steepest slopes (most price-sensitive).
 
 ### 💰 Revenue Curves
-<p align="center"> <img src="reports/figures/week2_revenue_curve_almond_milk.png" width="500"/> </p>
+<p align="center">
+  <img src="reports/figures/week2_revenue_curve_almond_milk.png" width="520" alt="Revenue curve — Almond milk"/>
+</p>
 
-> **Story:** Revenue initially rises with price (higher margin per unit) but eventually declines as volume falls. Protein shakes sustain revenue better at higher price points, while kombucha collapses fastest.
+> **Story:** Revenue increases up to a point (higher price × decent volume), then drops as volume collapses — revealing a **sweet spot**.
 
-### 🎉 Promotion Effects
-<p align="center"> <img src="reports/figures/week2_promo_effect_almond_milk.png" width="500"/> </p>
+### 🎉 Promo Effects
+<p align="center">
+  <img src="reports/figures/week2_promo_effect_almond_milk.png" width="520" alt="Promo effect — Almond milk"/>
+</p>
 
-> **Story:** Promotions shift demand upward across price levels, but not dramatically. For almond milk, promos lift demand modestly (~10%). For kombucha, promos have limited effect — price is the bigger driver.
+> **Story:** Promotions shift demand up across price levels. Lift is modest (~10%); revenue impact depends on discount depth.
 
 ### ⚔️ Competitor Sensitivity
-<p align="center"> <img src="reports/figures/week2_competitor_sensitivity_almond_milk.png" width="500"/> </p>
+<p align="center">
+  <img src="reports/figures/week2_competitor_sensitivity_almond_milk.png" width="520" alt="Competitor sensitivity — Almond milk"/>
+</p>
 
-> **Story:** When the discounter raises price, our demand curve shifts up slightly — we “inherit” some of their lost customers. Premium competitor movements have weaker effects, suggesting our segment is closer to the discounter’s shoppers.
+> **Story:** When **discounters raise price**, our demand curve shifts up (we inherit switchers). Premium pricing moves us less — we compete more directly with discounters.
 
-🧾 Business Insights (Week 2)
+## 🧾 Business Insights (Week 2)
 
-Elasticity Evidence:
+- **Elasticity evidence (regression):**
+  - **Oat milk:** ≈ **-0.59** (mild; not statistically strong)
+  - **Almond milk:** ≈ **-1.72** (**elastic**, significant)
+  - **Kombucha:** ≈ **-1.82** (**elastic**)
+  - **Protein shakes:** ≈ **-2.10** (**very elastic**)
+- **Promotions:** Lift units by ~**10%**, but can **reduce revenue** if discounts are too deep (esp. protein shakes).
+- **Competitors:** Discounter price moves affect us more than premium — our shoppers are value-oriented.
 
-Oat milk: Mildly sensitive (elasticity ≈ -0.59, not statistically strong).
+## 📂 Deliverables
 
-Almond milk: Strongly price sensitive (elasticity ≈ -1.72, significant).
-
-Kombucha: Elastic (≈ -1.82), unstable demand at higher prices.
-
-Protein shakes: Elastic (≈ -2.10), promotions and discounts matter most.
-
-Promotions: Lift unit sales by ~10%, but may not always increase revenue — especially for protein shakes, where discounts erode margin.
-
-Competitor Effects: Discounter pricing shifts affect us more than premium pricing. We compete more directly with value-oriented shoppers.
-
-📂 Deliverables
-
-Figures: reports/figures/
-
-Demand curves, revenue curves, promo effects, competitor sensitivity
-
-Tables: reports/tables/
-
-Regression coefficients and elasticity estimates
-
+- **Figures** → `reports/figures/`  
+  Demand curves, revenue curves, promo effect, competitor sensitivity
+- **Tables** → `reports/tables/`  
+  `elasticity_regression.csv` (coefficients), other summaries
 
